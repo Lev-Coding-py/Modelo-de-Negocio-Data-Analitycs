@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modelo de Negocio - Centro de Salud (Data Analytics)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+    h2.subtitulo {
+      text-align: center;
+      margin-top: 0;
+      color: #555;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+    .canvas {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto auto;
+      gap: 1rem;
+    }
+    .bloque {
+      background: #ffffff;
+      border-left: 6px solid #1e81b0;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .bloque h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #115173;
+    }
+    #actividades-clave { grid-column: 2 / 3; }
+    #propuesta-valor { grid-column: 3 / 4; }
+    #relaciones-clientes { grid-column: 4 / 5; }
+    #segmentos-clientes { grid-column: 4 / 5; grid-row: 1 / 3; }
+    #socios-clave { grid-column: 1 / 2; }
+    #recursos-clave { grid-column: 2 / 3; grid-row: 2; }
+    #canales { grid-column: 3 / 4; grid-row: 2; }
+    #estructura-costos { grid-column: 1 / 3; grid-row: 3; }
+    #fuentes-ingreso { grid-column: 3 / 5; grid-row: 3; }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+      .canvas {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      .bloque {
+        grid-column: auto !important;
+        grid-row: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Modelo de Negocio - Centro de Salud (Data Analytics)</h1>
+  <h2 class="subtitulo">Optimización del cuidado de salud mediante análisis de datos con Python, SQL Server y Power BI</h2>
+  <div class="canvas">
+
+    <div class="bloque" id="socios-clave">
+      <h2>Socios Clave</h2>
+      <ul>
+        <li>Equipo médico y especialistas</li>
+        <li>Equipo de TI y analistas de datos</li>
+        <li>Proveedores de software (SQL Server, Power BI)</li>
+        <li>Laboratorios y centros de diagnóstico externos</li>
+        <li>Instituciones de salud pública y aseguradoras</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="actividades-clave">
+      <h2>Actividades Clave</h2>
+      <ul>
+        <li>Recolección y limpieza de datos clínicos con Python</li>
+        <li>Gestión y consulta de bases de datos en SQL Server</li>
+        <li>Desarrollo de dashboards interactivos en Power BI</li>
+        <li>Análisis de patrones en historial médico para diagnóstico</li>
+        <li>Automatización de reportes y alertas para médicos y administración</li>
+        <li>Validación y presentación de resultados a stakeholders</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="propuesta-valor">
+      <h2>Propuesta de Valor</h2>
+      <ul>
+        <li>Decisiones clínicas basadas en datos confiables y actualizados</li>
+        <li>Mejora en la eficiencia operativa del centro de salud</li>
+        <li>Reducción de errores y tiempos de espera en atención médica</li>
+        <li>Visualización clara del estado de pacientes y recursos</li>
+        <li>Capacidad predictiva para manejo de enfermedades crónicas</li>
+        <li>Automatización que libera tiempo para atención directa</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="relaciones-clientes">
+      <h2>Relaciones con Clientes</h2>
+      <ul>
+        <li>Reportes periódicos a médicos y administración</li>
+        <li>Feedback continuo con equipo clínico para mejoras</li>
+        <li>Capacitación en uso de dashboards y herramientas</li>
+        <li>Soporte técnico para gestión de datos</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="segmentos-clientes">
+      <h2>Segmentos de Clientes</h2>
+      <ul>
+        <li>Médicos y especialistas</li>
+        <li>Administradores y gestores del centro de salud</li>
+        <li>Pacientes con historial médico digitalizado</li>
+        <li>Equipos de investigación clínica</li>
+        <li>Seguros médicos y entidades regulatorias</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="recursos-clave">
+      <h2>Recursos Clave</h2>
+      <ul>
+        <li>Conocimientos en Python, SQL Server y Power BI</li>
+        <li>Infraestructura tecnológica (servidores, bases de datos)</li>
+        <li>Datos clínicos y administrativos accesibles y confiables</li>
+        <li>Equipo multidisciplinario (médicos, analistas, TI)</li>
+        <li>Software y licencias para análisis y visualización</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="canales">
+      <h2>Canales</h2>
+      <ul>
+        <li>Dashboards y reportes vía Power BI en la web</li>
+        <li>Automatización de alertas vía email y sistemas internos</li>
+        <li>Reuniones periódicas con equipo médico y administración</li>
+        <li>Documentación y tutoriales para usuarios internos</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="estructura-costos">
+      <h2>Estructura de Costos</h2>
+      <ul>
+        <li>Licencias de software (SQL Server, Power BI)</li>
+        <li>Infraestructura y mantenimiento de bases de datos</li>
+        <li>Salarios del equipo de analistas y TI</li>
+        <li>Capacitación y actualización en herramientas</li>
+        <li>Costos operativos de gestión y reportes</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="fuentes-ingreso">
+      <h2>Fuentes de Ingreso (Valor Generado)</h2>
+      <ul>
+        <li>Mejora en la eficiencia y calidad del servicio médico</li>
+        <li>Reducción de costos por procesos optimizados</li>
+        <li>Valor agregado para aseguradoras y reguladores</li>
+        <li>Incremento de confianza y satisfacción del paciente</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>

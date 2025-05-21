@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modelo de Negocio - Tienda Retail (Data Analytics)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+    h2.subtitulo {
+      text-align: center;
+      margin-top: 0;
+      color: #555;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+    .canvas {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto auto;
+      gap: 1rem;
+    }
+    .bloque {
+      background: #ffffff;
+      border-left: 6px solid #27ae60;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .bloque h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #196f3d;
+    }
+    #actividades-clave { grid-column: 2 / 3; }
+    #propuesta-valor { grid-column: 3 / 4; }
+    #relaciones-clientes { grid-column: 4 / 5; }
+    #segmentos-clientes { grid-column: 4 / 5; grid-row: 1 / 3; }
+    #socios-clave { grid-column: 1 / 2; }
+    #recursos-clave { grid-column: 2 / 3; grid-row: 2; }
+    #canales { grid-column: 3 / 4; grid-row: 2; }
+    #estructura-costos { grid-column: 1 / 3; grid-row: 3; }
+    #fuentes-ingreso { grid-column: 3 / 5; grid-row: 3; }
+
+    @media (max-width: 768px) {
+      .canvas {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      .bloque {
+        grid-column: auto !important;
+        grid-row: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Modelo de Negocio - Tienda Retail (Data Analytics)</h1>
+  <h2 class="subtitulo">Optimización de inventarios, ventas y experiencia del cliente usando Python, SQL Server y Power BI</h2>
+  <div class="canvas">
+
+    <div class="bloque" id="socios-clave">
+      <h2>Socios Clave</h2>
+      <ul>
+        <li>Proveedores y fabricantes</li>
+        <li>Equipo de TI y analistas de datos</li>
+        <li>Plataformas de pago y logística</li>
+        <li>Software y proveedores de licencias (SQL Server, Power BI)</li>
+        <li>Agencias de marketing y ventas</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="actividades-clave">
+      <h2>Actividades Clave</h2>
+      <ul>
+        <li>Integración y limpieza de datos de ventas e inventarios con Python</li>
+        <li>Gestión y consultas de datos en SQL Server</li>
+        <li>Desarrollo de dashboards para seguimiento de KPIs en Power BI</li>
+        <li>Segmentación y análisis de comportamiento de clientes</li>
+        <li>Automatización de reportes de ventas, stock y tendencias</li>
+        <li>Monitoreo de campañas promocionales y su impacto</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="propuesta-valor">
+      <h2>Propuesta de Valor</h2>
+      <ul>
+        <li>Optimización del stock para evitar faltantes o excesos</li>
+        <li>Mejor conocimiento del comportamiento y preferencias del cliente</li>
+        <li>Decisiones basadas en datos para campañas y promociones</li>
+        <li>Reducción de costos operativos con procesos automatizados</li>
+        <li>Visualizaciones claras y accesibles para diferentes áreas</li>
+        <li>Respuesta ágil a cambios en tendencias del mercado</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="relaciones-clientes">
+      <h2>Relaciones con Clientes</h2>
+      <ul>
+        <li>Reportes periódicos para gerencia y área de ventas</li>
+        <li>Feedback constante para mejorar experiencia de compra</li>
+        <li>Capacitación en uso de dashboards para equipos operativos</li>
+        <li>Atención personalizada a clientes VIP y programas de fidelización</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="segmentos-clientes">
+      <h2>Segmentos de Clientes</h2>
+      <ul>
+        <li>Clientes finales y consumidores regulares</li>
+        <li>Gerencia y equipo comercial</li>
+        <li>Equipos de marketing y logística</li>
+        <li>Proveedores y distribuidores</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="recursos-clave">
+      <h2>Recursos Clave</h2>
+      <ul>
+        <li>Conocimientos en Python, SQL Server y Power BI</li>
+        <li>Base de datos con historial de ventas e inventarios</li>
+        <li>Infraestructura tecnológica y software</li>
+        <li>Equipo multidisciplinario (TI, ventas, marketing)</li>
+        <li>Herramientas de integración y automatización</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="canales">
+      <h2>Canales</h2>
+      <ul>
+        <li>Dashboards en Power BI accesibles vía web</li>
+        <li>Reportes automatizados enviados por correo</li>
+        <li>Reuniones periódicas con equipos clave</li>
+        <li>Comunicación mediante sistemas internos y plataformas colaborativas</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="estructura-costos">
+      <h2>Estructura de Costos</h2>
+      <ul>
+        <li>Licencias y mantenimiento de software</li>
+        <li>Infraestructura de TI y bases de datos</li>
+        <li>Salarios del equipo técnico y analistas</li>
+        <li>Gastos en capacitación y actualización tecnológica</li>
+        <li>Costos operativos relacionados a gestión y reportes</li>
+      </ul>
+    </div>
+
+    <div class="bloque" id="fuentes-ingreso">
+      <h2>Fuentes de Ingreso (Valor Generado)</h2>
+      <ul>
+        <li>Incremento en ventas por mejores campañas y stock adecuado</li>
+        <li>Reducción de pérdidas por inventarios mal gestionados</li>
+        <li>Mejora en la experiencia del cliente y fidelización</li>
+        <li>Optimización en costos operativos y logística</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
